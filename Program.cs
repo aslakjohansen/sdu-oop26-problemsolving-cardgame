@@ -15,10 +15,7 @@ for (int s=0 ; s<(int)Suit.Length ; s++) {
   
   int largest = -1;
   foreach (Card card in cards) {
-    // guard: reject wrong suit
-    if (card.suit != suit) continue;
-    
-    if (card.value>largest) {
+    if (card.suit == suit && card.value>largest) {
       largest = card.value;
     }
   }
