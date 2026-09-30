@@ -1,4 +1,5 @@
 // init
+
 Random rand = new Random();
 Card[] cards = new Card[20];
 for (int i=0 ; i<cards.Length ; i++) {
@@ -8,17 +9,7 @@ for (int i=0 ; i<cards.Length ; i++) {
   };
 }
 
-foreach (Card card in cards) {
-  Console.WriteLine(card.suit);
-  Console.WriteLine(card.value);
-}
-
-//Card card = new Card {suit=Suit.Club, value = 3};
-//Console.WriteLine(card.suit);
-//Console.WriteLine(card.value);
-
 // main
-//Console.WriteLine("fghjkl");
 
 // data types
 
