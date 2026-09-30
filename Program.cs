@@ -10,6 +10,21 @@ for (int i=0 ; i<cards.Length ; i++) {
 }
 
 // main
+for (int s=0 ; s<(int)Suit.Length ; s++) {
+  Suit suit = (Suit) s;
+  
+  int largest = -1;
+  foreach (Card card in cards) {
+    // guard: reject wrong suit
+    if (card.suit != suit) continue;
+    
+    if (card.value>largest) {
+      largest = card.value;
+    }
+  }
+  
+  Console.WriteLine("Largest value for "+suit+" is "+largest);
+}
 
 // data types
 
