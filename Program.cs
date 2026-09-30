@@ -1,6 +1,7 @@
 // init
 
 Random rand = new Random();
+
 Card[] cards = new Card[20];
 for (int i=0 ; i<cards.Length ; i++) {
   cards[i] = new Card {
@@ -10,6 +11,7 @@ for (int i=0 ; i<cards.Length ; i++) {
 }
 
 // main
+
 for (int s=0 ; s<(int)Suit.Length ; s++) {
   Suit suit = (Suit) s;
   
