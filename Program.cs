@@ -1,4 +1,7 @@
 // init
+Card card = new Card {suit=Suit.Club, value = 3};
+Console.WriteLine(card.suit);
+Console.WriteLine(card.value);
 
 // main
 Console.WriteLine("fghjkl");
